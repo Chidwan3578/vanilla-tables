@@ -2,6 +2,10 @@
 
 Fast, framework-agnostic data tables in pure JavaScript.
 
+[![CI](https://github.com/lhozdroid/vanilla-tables/actions/workflows/ci.yml/badge.svg)](https://github.com/lhozdroid/vanilla-tables/actions/workflows/ci.yml)
+[![npm version](https://img.shields.io/npm/v/vanilla-tables.svg)](https://www.npmjs.com/package/vanilla-tables)
+[![npm downloads](https://img.shields.io/npm/dm/vanilla-tables.svg)](https://www.npmjs.com/package/vanilla-tables)
+
 Vanilla Tables is an object-oriented table engine designed for real apps: rich features, extensible API, production-safe behavior, and strong test coverage.
 
 ## Why Vanilla Tables
@@ -173,6 +177,37 @@ npm run test
 npm run test:e2e:perf
 npm run release:verify
 ```
+
+## Publish To npm + CDN
+
+1. Login locally:
+
+```bash
+npm login
+```
+
+2. Publish:
+
+```bash
+npm publish --access public
+```
+
+3. CDN availability:
+- jsDelivr: `https://cdn.jsdelivr.net/npm/vanilla-tables/dist/vanilla-tables.min.js`
+- unpkg: `https://unpkg.com/vanilla-tables/dist/vanilla-tables.min.js`
+
+The package already exposes `unpkg` and `jsdelivr` fields in `package.json`.
+
+## How To Grow Adoption
+
+- Keep examples strong: add short recipe pages for the top 10 use-cases.
+- Add comparison docs: “Vanilla Tables vs DataTables/Tabulator/AG Grid”.
+- Ship copy-paste snippets for React/Vue/Angular wrappers.
+- Keep release notes tight and frequent (`v0.x` with clear changelogs).
+- Add benchmark page with reproducible methodology and raw numbers.
+- Label and respond to issues quickly to build maintainer trust.
+- Add “good first issue” labels and contributor onboarding tasks.
+- Publish short demo videos/gifs for key features.
 
 ## Contributing
 
